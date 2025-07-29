@@ -1,4 +1,4 @@
-import { Codepen, Github, Linkedin, Twitter, Code, Database, Server, Cog, type LucideIcon } from 'lucide-react';
+import { Codepen, Github, Linkedin, Twitter, Code, Database, Server, Cog, School, type LucideIcon } from 'lucide-react';
 
 export const GITHUB_USERNAME = "your-github-username";
 
@@ -18,6 +18,26 @@ export const skills: Skill[] = [
   { name: 'Tailwind CSS', icon: Code },
   { name: 'REST APIs', icon: Cog },
 ];
+
+export interface Education {
+  institution: string;
+  degree: string;
+  period: string;
+}
+
+export const education: Education[] = [
+    {
+        institution: 'University of Innovation',
+        degree: 'B.S. in Computer Science',
+        period: '2018 - 2022',
+    },
+    {
+        institution: 'Code Academy',
+        degree: 'Full-Stack Web Development',
+        period: '2021',
+    },
+];
+
 
 export interface Project {
   title: string;

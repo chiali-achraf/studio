@@ -1,8 +1,10 @@
 import Image from 'next/image';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import { skills } from '@/lib/data';
+import { skills, education } from '@/lib/data';
 import { AnimatedSection } from '../animated-section';
+import { Phone, School } from 'lucide-react';
+import { Separator } from '../ui/separator';
 
 export default function About() {
   return (
@@ -19,6 +21,10 @@ export default function About() {
                 <p>
                   My journey in web development began with a deep curiosity for how things work on the internet. Since then, I&apos;ve been honing my skills in various technologies, always eager to learn and adapt to the ever-evolving landscape of the web. I thrive in collaborative environments and am passionate about creating applications that provide real value to users.
                 </p>
+                 <div className="flex items-center gap-2">
+                    <Phone className="h-5 w-5 text-primary" />
+                    <span>+1 (234) 567-890</span>
+                </div>
               </div>
             </div>
             <div className="relative group flex justify-center">
@@ -34,23 +40,49 @@ export default function About() {
             </div>
           </div>
         </AnimatedSection>
-        <AnimatedSection delay={200}>
-          <Card className="mt-16">
-            <CardHeader>
-              <CardTitle>My Skillset</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <div className="flex flex-wrap gap-4">
-                {skills.map((skill) => (
-                  <Badge key={skill.name} variant="secondary" className="text-base px-4 py-2 flex items-center gap-2">
-                    <skill.icon className="h-5 w-5 text-primary" />
-                    <span>{skill.name}</span>
-                  </Badge>
-                ))}
-              </div>
-            </CardContent>
-          </Card>
-        </AnimatedSection>
+        <div className="grid md:grid-cols-2 gap-8 mt-16">
+            <AnimatedSection delay={200}>
+              <Card className="h-full">
+                <CardHeader>
+                  <CardTitle>My Skillset</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <div className="flex flex-wrap gap-4">
+                    {skills.map((skill) => (
+                      <Badge key={skill.name} variant="secondary" className="text-base px-4 py-2 flex items-center gap-2">
+                        <skill.icon className="h-5 w-5 text-primary" />
+                        <span>{skill.name}</span>
+                      </Badge>
+                    ))}
+                  </div>
+                </CardContent>
+              </Card>
+            </AnimatedSection>
+            <AnimatedSection delay={300}>
+               <Card className="h-full">
+                    <CardHeader>
+                        <CardTitle>Education</CardTitle>
+                    </CardHeader>
+                    <CardContent className="space-y-4">
+                        {education.map((edu, index) => (
+                            <div key={edu.institution}>
+                                <div className="flex items-start gap-4">
+                                    <div className="mt-1">
+                                      <School className="h-5 w-5 text-primary" />
+                                    </div>
+                                    <div>
+                                        <h3 className="font-semibold">{edu.institution}</h3>
+                                        <p className="text-muted-foreground text-sm">{edu.degree}</p>
+                                        <p className="text-muted-foreground text-xs">{edu.period}</p>
+                                    </div>
+                                </div>
+                                {index < education.length - 1 && <Separator className="my-4" />}
+                            </div>
+                        ))}
+                    </CardContent>
+                </Card>
+            </AnimatedSection>
+        </div>
       </div>
     </section>
   );
