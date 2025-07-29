@@ -21,10 +21,6 @@ export default function About() {
                 <p>
                   My journey in web development began with a deep curiosity for how things work on the internet. Since then, I&apos;ve been honing my skills in various technologies, always eager to learn and adapt to the ever-evolving landscape of the web. I thrive in collaborative environments and am passionate about creating applications that provide real value to users.
                 </p>
-                 <div className="flex items-center gap-2">
-                    <Phone className="h-5 w-5 text-primary" />
-                    <span>+1 (234) 567-890</span>
-                </div>
               </div>
             </div>
             <div className="relative group flex justify-center">
