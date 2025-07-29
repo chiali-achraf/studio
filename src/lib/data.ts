@@ -1,4 +1,4 @@
-import { Codepen, Github, Linkedin, Twitter, Code, Database, Server, Cog, School, Phone, type LucideIcon } from 'lucide-react';
+import { Codepen, Github, Linkedin, Twitter, Code, Database, Server, Cog, School, Phone, Mail, type LucideIcon } from 'lucide-react';
 
 export const GITHUB_USERNAME = "your-github-username";
 
@@ -97,6 +97,6 @@ export const socialLinks: SocialLink[] = [
   { name: 'GitHub', url: `https://github.com/${GITHUB_USERNAME}`, icon: Github },
   { name: 'LinkedIn', url: 'https://linkedin.com/in/your-linkedin-profile', icon: Linkedin },
   { name: 'Twitter', url: 'https://twitter.com/your-twitter-handle', icon: Twitter },
-  { name: 'CodePen', url: 'https://codepen.io/your-codepen', icon: Codepen },
+  { name: 'chsidahmed05@gmail.com', url: 'mailto:chsidahmed05@gmail.com', icon: Mail },
   { name: '+1 (234) 567-890', url: 'tel:+1234567890', icon: Phone },
 ];
