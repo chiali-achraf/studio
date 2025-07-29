@@ -15,8 +15,7 @@ export default function Contact() {
   const { toast } = useToast();
   const [isLoading, setIsLoading] = useState(false);
   
-  // IMPORTANT: Replace with your own Formspree endpoint
-  const formspreeEndpoint = "https://formspree.io/f/YOUR_FORM_ID";
+  const formspreeEndpoint = "https://formspree.io/f/chsidahmed05@gmail.com";
 
   async function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
@@ -72,7 +71,7 @@ export default function Contact() {
                 <form className="space-y-4" onSubmit={handleSubmit}>
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <Input placeholder="Your Name" type="text" name="name" required />
-                    <Input placeholder="Your Email" type="email" name="email" required />
+                    <Input placeholder="Your Email" type="email" name="_replyto" required />
                   </div>
                   <Textarea placeholder="Your Message" rows={5} name="message" required />
                   <Button type="submit" size="lg" className="w-full" disabled={isLoading}>
