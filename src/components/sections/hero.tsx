@@ -11,11 +11,10 @@ export default function Hero() {
         <AnimatedSection className="flex flex-col items-center gap-6">
           <div className="space-y-4">
             <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl font-headline">
-              Hi, I&apos;m Your Name
+              Hi, I&apos;m Chiali Achraf
             </h1>
             <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl">
-              A passionate full-stack developer specializing in creating modern, responsive, and user-friendly web applications.
-            </p>
+I'm a mobile,backend developer passionate about building clean, fast, and reliable apps. I specialize in native Android development and love turning real-world ideas into smooth, user-friendly mobile experiences.            </p>
           </div>
           <div className="rounded-md">
             <Button asChild size="lg" className="glow-on-hover rounded-md">

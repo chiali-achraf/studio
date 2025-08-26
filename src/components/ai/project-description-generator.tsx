@@ -80,14 +80,14 @@ export function ProjectDescriptionGenerator() {
   return (
     <Dialog open={isOpen} onOpenChange={setIsOpen}>
       <DialogTrigger asChild>
-        <Button>
+        {/* <Button>
           <Wand2 className="mr-2 h-4 w-4" />
           AI Describe Project
-        </Button>
+        </Button> */}
       </DialogTrigger>
       <DialogContent className="sm:max-w-[525px]">
         <DialogHeader>
-          <DialogTitle>AI Project Description Generator</DialogTitle>
+          {/* <DialogTitle>AI Project Description Generator</DialogTitle> */}
           <DialogDescription>
             Enter your project&apos;s tech stack and goals, and let AI craft a compelling description for you.
           </DialogDescription>

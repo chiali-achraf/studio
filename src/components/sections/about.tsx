@@ -16,17 +16,18 @@ export default function About() {
               <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl font-headline">About Me</h2>
               <div className="space-y-4 text-muted-foreground">
                 <p>
-                  Hello! I&apos;m a dedicated and results-driven software developer with a knack for building beautiful and functional websites. With a strong foundation in both front-end and back-end technologies, I enjoy turning complex problems into simple, elegant solutions.
-                </p>
-                <p>
-                  My journey in web development began with a deep curiosity for how things work on the internet. Since then, I&apos;ve been honing my skills in various technologies, always eager to learn and adapt to the ever-evolving landscape of the web. I thrive in collaborative environments and am passionate about creating applications that provide real value to users.
-                </p>
+  Hello! I'm a dedicated and results-driven mobile,back-end developer with a passion for crafting smooth, intuitive apps. I specialize in native Android development, focusing on building fast, reliable, and beautiful mobile experiences.
+</p>
+<p>
+  My journey into mobile development started with a curiosity about how apps work behind the scenes and how the operation system works . Since then, I’ve been diving deep into Android technologies, constantly learning and evolving with the platform.then started in backend journey , I enjoy working on meaningful projects and love collaborating with others to bring ideas to life in the palm of your hand.
+</p>
+
               </div>
             </div>
             <div className="relative group flex justify-center">
               <div className="absolute -inset-1 bg-gradient-to-r from-primary to-accent rounded-lg blur opacity-25 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"></div>
               <Image
-                src="https://placehold.co/400x400.png"
+                src="/images/me.jpg"
                 alt="Your Name"
                 width={400}
                 height={400}
